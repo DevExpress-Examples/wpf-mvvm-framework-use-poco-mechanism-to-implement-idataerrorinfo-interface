@@ -1,12 +1,9 @@
-﻿Imports DevExpress.Mvvm
-Imports DevExpress.Mvvm.DataAnnotations
-Imports System.Windows.Media
+﻿Imports DevExpress.Mvvm.DataAnnotations
+Imports DevExpress.Mvvm.POCO
 
 Namespace Example.ViewModel
-    <POCOViewModel(ImplementIDataErrorInfo := True)> _
+    <POCOViewModel(ImplementIDataErrorInfo:=True)>
     Public Class MainViewModel
-        Inherits ViewModelBase
-
         Private Shared Function AddPasswordCheck(ByVal builder As PropertyMetadataBuilder(Of MainViewModel, String)) As PropertyMetadataBuilder(Of MainViewModel, String)
             Return builder.MatchesInstanceRule(Function(name, vm) vm.Password = vm.ConfirmPassword, Function() "The passwords don't match.").MinLength(8, Function() "The password must be at least 8 characters long.").MaxLength(20, Function() "The password must not exceed the length of 20.")
         End Function
@@ -23,10 +20,10 @@ Namespace Example.ViewModel
         Public Overridable Property Password() As String
         Public Overridable Property ConfirmPassword() As String
         Public Sub OnPasswordChanged()
-            Me.RaisePropertyChanged(Function() ConfirmPassword)
+            Me.RaisePropertyChanged(Of String)(Function(d) d.ConfirmPassword)
         End Sub
         Public Sub OnConfirmPasswordChanged()
-            Me.RaisePropertyChanged(Function() Password)
+            Me.RaisePropertyChanged(Of String)(Function(d) d.Password)
         End Sub
     End Class
 End Namespace

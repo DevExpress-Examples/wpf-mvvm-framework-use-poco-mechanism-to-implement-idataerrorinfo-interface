@@ -1,10 +1,11 @@
 ﻿using DevExpress.Mvvm;
 using DevExpress.Mvvm.DataAnnotations;
+using DevExpress.Mvvm.POCO;
 using System.Windows.Media;
 
 namespace Example.ViewModel {
     [POCOViewModel(ImplementIDataErrorInfo = true)]
-    public class MainViewModel : ViewModelBase {
+    public class MainViewModel  {
         static PropertyMetadataBuilder<MainViewModel, string> AddPasswordCheck(PropertyMetadataBuilder<MainViewModel, string> builder) {
             return builder.MatchesInstanceRule((name, vm) => vm.Password == vm.ConfirmPassword, () => "The passwords don't match.")
                 .MinLength(8, () => "The password must be at least 8 characters long.")
@@ -28,10 +29,10 @@ namespace Example.ViewModel {
         public virtual string Password { get; set; }
         public virtual string ConfirmPassword { get; set; }
         public void OnPasswordChanged() {
-            this.RaisePropertyChanged(() => ConfirmPassword);
+            this.RaisePropertyChanged<MainViewModel, string>(d => d.ConfirmPassword);
         }
         public void OnConfirmPasswordChanged() {
-            this.RaisePropertyChanged(() => Password);
+            this.RaisePropertyChanged<MainViewModel, string>(d => d.Password);
         }
     }
 }
