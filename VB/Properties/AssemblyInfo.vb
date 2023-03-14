@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to: Use the POCO Mechanism to implement the IDataErrorInfo Interface
 ' 
 ' This Code Example demonstrates how you use the POCO mechanism to implement the
@@ -14,25 +14,21 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E5151
-
 Imports System
 Imports System.Reflection
 Imports System.Resources
-Imports System.Runtime.CompilerServices
 Imports System.Runtime.InteropServices
-Imports System.Windows
 
-<Assembly: AssemblyTitle("ExampleMvvm")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyConfiguration("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("ExampleMvvm")>
-<Assembly: AssemblyCopyright("")>
-<Assembly: AssemblyTrademark("")>
-<Assembly: AssemblyCulture("")>
-<Assembly: CLSCompliant(True)>
-<Assembly: ComVisible(False)>
-<Assembly: NeutralResourcesLanguage("en-US")>
-
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly:AssemblyTitle("ExampleMvvm")>
+<Assembly:AssemblyDescription("")>
+<Assembly:AssemblyConfiguration("")>
+<Assembly:AssemblyCompany("")>
+<Assembly:AssemblyProduct("ExampleMvvm")>
+<Assembly:AssemblyCopyright("")>
+<Assembly:AssemblyTrademark("")>
+<Assembly:AssemblyCulture("")>
+<Assembly:CLSCompliant(True)>
+<Assembly:ComVisible(False)>
+<Assembly:NeutralResourcesLanguage("en-US")>
+<Assembly:AssemblyVersion("1.0.0.0")>
+<Assembly:AssemblyFileVersion("1.0.0.0")>

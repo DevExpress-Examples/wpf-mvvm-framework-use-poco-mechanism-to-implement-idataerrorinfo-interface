@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to: Use the POCO Mechanism to implement the IDataErrorInfo Interface
 ' 
 ' This Code Example demonstrates how you use the POCO mechanism to implement the
@@ -14,11 +14,11 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E5151
-
 Imports System.Windows.Controls
 
 Namespace Example.View
-    Partial Public Class MainView
+
+    Public Partial Class MainView
         Inherits UserControl
 
         Public Sub New()
