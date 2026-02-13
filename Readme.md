@@ -29,7 +29,7 @@ This example demonstrates how to use the POCO mechanism to implement the [IDataE
 * [Use the MessageBoxService in POCO View Models](https://github.com/DevExpress-Examples/how-to-use-messageboxservice-in-poco-view-models-t144023)
 * [WPF MVVM Framework - Validate a View with ValidationErrorsHostBehavior and POCO](https://github.com/DevExpress-Examples/wpf-mvvm-framework-validate-ui-container-with-validationerrorshostbehavior-and-poco)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-mvvm-framework-use-poco-mechanism-to-implement-idataerrorinfo-interface&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-mvvm-framework-use-poco-mechanism-to-implement-idataerrorinfo-interface&~~~was_helpful=no)
 
